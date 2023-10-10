@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subpackages &mdash; lambeq 0.1.dev45+g5da6a54 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/table-wrap.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Class diagrams" href="uml-diagrams.html" />
+    <link rel="prev" title="lambeq package" href="root-api.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            lambeq
+              <img src="_static/lambeq_logo.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.1.dev45+g5da6a54
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pipeline.html">Pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="parsing.html">Syntactic parsing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="string_diagrams.html">String diagrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discopy.html">DisCoPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="use-cases.html">lambeq use cases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CONTRIBUTING.html">Contributing to lambeq</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">NLP-101</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="nlp-intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nlp-data.html">Working with text data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nlp-class.html">Text classification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nlp-ml.html">Machine learning best practices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nlp-refs.html">References for further study</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/sentence-input.html">Step 1. Sentence input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/rewrite.html">Step 2. Diagram rewriting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/parameterise.html">Step 3. Parameterisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="training.html">Step 4: Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="models.html">Choosing a model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_training.html">Advanced: Manual training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced.html">Advanced: DisCoPy usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials/extend-lambeq.html">Advanced: Extending lambeq</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Toolkit</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="root-api.html">lambeq package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Subpackages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#lambeq-ansatz">lambeq.ansatz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lambeq-bobcat">lambeq.bobcat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lambeq-pregroups">lambeq.pregroups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lambeq-rewrite">lambeq.rewrite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lambeq-text2diagram">lambeq.text2diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lambeq-tokeniser">lambeq.tokeniser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lambeq-training">lambeq.training</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="uml-diagrams.html">Class diagrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Command-line interface</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bibliography.html">Bibliography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release_notes.html">Release notes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">External links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://qnlp.cambridgequantum.com/downloads.html">Resources</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://qnlp.cambridgequantum.com/generate.html">Web demo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://discopy.readthedocs.io">DisCoPy</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">lambeq</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Subpackages</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/CQCL/lambeq/blob/main/docs/package-api.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="subpackages">
+<span id="sec-package-api"></span><h1>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h1>
+<section id="lambeq-ansatz">
+<span id="api-ansatz"></span><h2>lambeq.ansatz<a class="headerlink" href="#lambeq-ansatz" title="Permalink to this heading"></a></h2>
+<p>Concrete implementations of classical and quantum <a class="reference internal" href="glossary.html#term-ansatz-plural-ansatze"><span class="xref std std-term">ansätze</span></a>.</p>
+<p class="rubric">API: <a class="reference internal" href="lambeq.ansatz.html"><span class="doc">lambeq.ansatz</span></a></p>
+<p class="rubric">UML diagrams: <a class="reference internal" href="uml-diagrams.html#uml-ansatz"><span class="std std-ref">lambeq.ansatz</span></a></p>
+<p class="rubric">Classes:</p>
+<div class="graphviz"><img src="_images/inheritance-3ba417cb6a9aeaca682e33eb3b323b3b32750bd4.png" alt="Inheritance diagram of lambeq.ansatz.IQPAnsatz, lambeq.ansatz.MPSAnsatz, lambeq.ansatz.Sim14Ansatz, lambeq.ansatz.Sim15Ansatz, lambeq.ansatz.SpiderAnsatz, lambeq.ansatz.StronglyEntanglingAnsatz, lambeq.ansatz.Symbol" usemap="#inheritance147045841d" class="inheritance graphviz" /></div>
+<map id="inheritance147045841d" name="inheritance147045841d">
+<area shape="rect" id="node2" href="root-api.html#lambeq.BaseAnsatz" target="_top" title="Base class for ansatz." alt="" coords="125,153,224,179"/>
+<area shape="rect" id="node3" href="root-api.html#lambeq.CircuitAnsatz" target="_top" title="Base class for circuit ansatz." alt="" coords="272,104,380,129"/>
+<area shape="rect" id="node6" href="root-api.html#lambeq.TensorAnsatz" target="_top" title="Base class for tensor network ansatz." alt="" coords="272,203,380,228"/>
+<area shape="rect" id="node4" href="root-api.html#lambeq.IQPAnsatz" target="_top" title="Instantaneous Quantum Polynomial ansatz." alt="" coords="479,5,566,31"/>
+<area shape="rect" id="node7" href="root-api.html#lambeq.Sim14Ansatz" target="_top" title="Modification of circuit 14 from Sim et al." alt="" coords="469,55,576,80"/>
+<area shape="rect" id="node8" href="root-api.html#lambeq.Sim15Ansatz" target="_top" title="Modification of circuit 15 from Sim et al." alt="" coords="469,104,576,129"/>
+<area shape="rect" id="node10" href="root-api.html#lambeq.StronglyEntanglingAnsatz" target="_top" title="Strongly entangling ansatz." alt="" coords="428,153,617,179"/>
+<area shape="rect" id="node5" href="root-api.html#lambeq.MPSAnsatz" target="_top" title="Split large boxes into matrix product states." alt="" coords="475,203,570,228"/>
+<area shape="rect" id="node9" href="root-api.html#lambeq.SpiderAnsatz" target="_top" title="Split large boxes into spiders." alt="" coords="469,252,576,277"/>
+<area shape="rect" id="node11" href="root-api.html#lambeq.Symbol" target="_top" title="A sympy symbol augmented with extra information." alt="" coords="5,104,77,129"/>
+</map><div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="lambeq-bobcat">
+<span id="api-bobcat"></span><h2>lambeq.bobcat<a class="headerlink" href="#lambeq-bobcat" title="Permalink to this heading"></a></h2>
+<p>The code for <a class="reference internal" href="glossary.html#term-Bobcat"><span class="xref std std-term">Bobcat</span></a> parser, a state-of-the-art <a class="reference internal" href="glossary.html#term-Combinatory-Categorial-Grammar-CCG"><span class="xref std std-term">CCG</span></a> parser used for getting syntactic derivations of sentences.</p>
+<p class="rubric">API: <a class="reference internal" href="lambeq.bobcat.html"><span class="doc">lambeq.bobcat</span></a></p>
+<p class="rubric">UML diagrams: <a class="reference internal" href="uml-diagrams.html#uml-bobcat"><span class="std std-ref">lambeq.bobcat</span></a></p>
+<p class="rubric">Classes:</p>
+<div class="graphviz"><img src="_images/inheritance-b9f7b35603c2a1d1f190423d49ec85a50fc6caee.png" alt="Inheritance diagram of lambeq.bobcat.grammar.Grammar, lambeq.bobcat.lexicon.Category, lambeq.bobcat.parser.ChartParser, lambeq.bobcat.parser.Sentence, lambeq.bobcat.parser.Supertag, lambeq.bobcat.rules.Rule, lambeq.bobcat.tagger.Tagger, lambeq.bobcat.tagger.BertForChartClassification, lambeq.bobcat.tree.ParseTree" usemap="#inheritance9fcfd7b275" class="inheritance graphviz" /></div>
+<map id="inheritance9fcfd7b275" name="inheritance9fcfd7b275">
+<area shape="rect" id="node1" href="lambeq.bobcat.html#lambeq.bobcat.BertForChartClassification" target="_top" title="BertForChartClassification" alt="" coords="572,498,763,523"/>
+<area shape="rect" id="node4" href="lambeq.bobcat.html#lambeq.bobcat.Category" target="_top" title="The type of a constituent in a CCG." alt="" coords="33,350,114,375"/>
+<area shape="rect" id="node5" href="lambeq.bobcat.html#lambeq.bobcat.ChartParser" target="_top" title="ChartParser" alt="" coords="25,301,122,326"/>
+<area shape="rect" id="node8" href="lambeq.bobcat.html#lambeq.bobcat.Grammar" target="_top" title="The grammar dataclass." alt="" coords="31,202,115,228"/>
+<area shape="rect" id="node11" href="lambeq.bobcat.html#lambeq.bobcat.ParseTree" target="_top" title="ParseTree(rule: &#39;Rule&#39;, cat: &#39;Category&#39;, left: &#39;ParseTree&#39;, right: &#39;ParseTree&#39;, unfilled_deps: &#39;list[Dependency]&#39;, filled_deps: &#39;list[Dependency]&#39;, var_map: &#39;dict[int, Variable]&#39;, score: &#39;float&#39; = 0)" alt="" coords="31,153,115,178"/>
+<area shape="rect" id="node15" href="lambeq.bobcat.html#lambeq.bobcat.Sentence" target="_top" title="An input sentence." alt="" coords="32,104,114,129"/>
+<area shape="rect" id="node16" href="lambeq.bobcat.html#lambeq.bobcat.Supertag" target="_top" title="A string category, annotated with its log probability." alt="" coords="33,55,113,80"/>
+<area shape="rect" id="node17" href="lambeq.bobcat.html#lambeq.bobcat.Tagger" target="_top" title="Tagger" alt="" coords="37,5,109,31"/>
+</map><div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="lambeq-pregroups">
+<span id="api-pregroups"></span><h2>lambeq.pregroups<a class="headerlink" href="#lambeq-pregroups" title="Permalink to this heading"></a></h2>
+<p>A collection of useful utilities for easier manipulation of <a class="reference internal" href="glossary.html#term-pregroup-grammar"><span class="xref std std-term">pregroup</span></a> diagrams.</p>
+<p class="rubric">API: <a class="reference internal" href="lambeq.pregroups.html"><span class="doc">lambeq.pregroups</span></a></p>
+<p class="rubric">UML diagrams: <a class="reference internal" href="uml-diagrams.html#uml-pregroups"><span class="std std-ref">lambeq.pregroups</span></a></p>
+<p class="rubric">Methods</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="lambeq.pregroups.html#lambeq.pregroups.create_pregroup_diagram" title="lambeq.pregroups.create_pregroup_diagram"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create_pregroup_diagram()</span></code></a></p></li>
+<li><p><a class="reference internal" href="lambeq.pregroups.html#lambeq.pregroups.diagram2str" title="lambeq.pregroups.diagram2str"><code class="xref py py-meth docutils literal notranslate"><span class="pre">diagram2str()</span></code></a></p></li>
+<li><p><a class="reference internal" href="lambeq.pregroups.html#lambeq.pregroups.is_pregroup_diagram" title="lambeq.pregroups.is_pregroup_diagram"><code class="xref py py-meth docutils literal notranslate"><span class="pre">is_pregroup_diagram()</span></code></a></p></li>
+<li><p><a class="reference internal" href="lambeq.pregroups.html#lambeq.pregroups.remove_cups" title="lambeq.pregroups.remove_cups"><code class="xref py py-meth docutils literal notranslate"><span class="pre">remove_cups()</span></code></a></p></li>
+<li><p><a class="reference internal" href="lambeq.pregroups.html#lambeq.pregroups.remove_swaps" title="lambeq.pregroups.remove_swaps"><code class="xref py py-meth docutils literal notranslate"><span class="pre">remove_swaps()</span></code></a></p></li>
+</ul>
+<p class="rubric">Classes</p>
+<div class="graphviz"><img src="_images/inheritance-08acc5ce09d2c916d67cd46d936a3825a73de1bd.png" alt="Inheritance diagram of lambeq.pregroups.TextDiagramPrinter" usemap="#inheritanceadfeb831d6" class="inheritance graphviz" /></div>
+<map id="inheritanceadfeb831d6" name="inheritanceadfeb831d6">
+<area shape="rect" id="node1" href="lambeq.pregroups.html#lambeq.pregroups.TextDiagramPrinter" target="_top" title="A text printer for pregroup diagrams." alt="" coords="5,5,153,31"/>
+</map><div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="lambeq-rewrite">
+<span id="api-rewrite"></span><h2>lambeq.rewrite<a class="headerlink" href="#lambeq-rewrite" title="Permalink to this heading"></a></h2>
+<p>Contains implementations of <a class="reference internal" href="glossary.html#term-rewrite-rule"><span class="xref std std-term">rewrite rules</span></a> for the transformation of <a class="reference internal" href="glossary.html#term-string-diagram"><span class="xref std std-term">string diagrams</span></a>.</p>
+<p class="rubric">API: <a class="reference internal" href="lambeq.rewrite.html"><span class="doc">lambeq.rewrite</span></a></p>
+<p class="rubric">UML diagrams: <a class="reference internal" href="uml-diagrams.html#uml-rewrite"><span class="std std-ref">lambeq.rewrite</span></a></p>
+<p class="rubric">Classes</p>
+<div class="graphviz"><img src="_images/inheritance-8c9df08c30310d085dd943ae0b4237299b23b886.png" alt="Inheritance diagram of lambeq.rewrite.CoordinationRewriteRule, lambeq.rewrite.CurryRewriteRule, lambeq.rewrite.RewriteRule, lambeq.rewrite.Rewriter, lambeq.rewrite.SimpleRewriteRule" usemap="#inheritance709bdf749e" class="inheritance graphviz" /></div>
+<map id="inheritance709bdf749e" name="inheritance709bdf749e">
+<area shape="rect" id="node3" href="root-api.html#lambeq.RewriteRule" target="_top" title="Base class for rewrite rules." alt="" coords="131,55,232,80"/>
+<area shape="rect" id="node2" href="root-api.html#lambeq.CoordinationRewriteRule" target="_top" title="A rewrite rule for coordination." alt="" coords="280,5,464,31"/>
+<area shape="rect" id="node4" href="root-api.html#lambeq.CurryRewriteRule" target="_top" title="A rewrite rule using map&#45;state duality." alt="" coords="304,55,440,80"/>
+<area shape="rect" id="node6" href="root-api.html#lambeq.SimpleRewriteRule" target="_top" title="A simple rewrite rule." alt="" coords="299,104,445,129"/>
+<area shape="rect" id="node5" href="root-api.html#lambeq.Rewriter" target="_top" title="Class that rewrites diagrams." alt="" coords="5,5,83,31"/>
+</map><div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="lambeq-text2diagram">
+<span id="api-text2diagram"></span><h2>lambeq.text2diagram<a class="headerlink" href="#lambeq-text2diagram" title="Permalink to this heading"></a></h2>
+<p>Package containing the interfaces for the <a class="reference internal" href="glossary.html#term-Combinatory-Categorial-Grammar-CCG"><span class="xref std std-term">CCG</span></a> parsers (including a <a class="reference internal" href="lambeq.text2diagram.html#lambeq.text2diagram.CCGBankParser" title="lambeq.text2diagram.CCGBankParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">CCGBankParser</span></code></a>), as well as abstractions and concrete classes for <a class="reference internal" href="glossary.html#term-reader"><span class="xref std std-term">readers</span></a>, implementing a variety of <a class="reference internal" href="glossary.html#term-compositional-model"><span class="xref std std-term">compositional models</span></a> for sentences.</p>
+<p class="rubric">API: <a class="reference internal" href="lambeq.text2diagram.html"><span class="doc">lambeq.text2diagram</span></a></p>
+<p class="rubric">UML diagrams: <a class="reference internal" href="uml-diagrams.html#uml-text2diagram"><span class="std std-ref">lambeq.text2diagram</span></a></p>
+<p class="rubric">Objects</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="lambeq.text2diagram.html#lambeq.text2diagram.bag_of_words_reader" title="lambeq.text2diagram.bag_of_words_reader"><code class="xref py py-data docutils literal notranslate"><span class="pre">bag_of_words_reader</span></code></a></p></li>
+<li><p><a class="reference internal" href="lambeq.text2diagram.html#lambeq.text2diagram.cups_reader" title="lambeq.text2diagram.cups_reader"><code class="xref py py-data docutils literal notranslate"><span class="pre">cups_reader</span></code></a></p></li>
+<li><p><a class="reference internal" href="lambeq.text2diagram.html#lambeq.text2diagram.spiders_reader" title="lambeq.text2diagram.spiders_reader"><code class="xref py py-data docutils literal notranslate"><span class="pre">spiders_reader</span></code></a></p></li>
+<li><p><a class="reference internal" href="lambeq.text2diagram.html#lambeq.text2diagram.stairs_reader" title="lambeq.text2diagram.stairs_reader"><code class="xref py py-data docutils literal notranslate"><span class="pre">stairs_reader</span></code></a></p></li>
+<li><p><a class="reference internal" href="lambeq.text2diagram.html#lambeq.text2diagram.word_sequence_reader" title="lambeq.text2diagram.word_sequence_reader"><code class="xref py py-data docutils literal notranslate"><span class="pre">word_sequence_reader</span></code></a></p></li>
+</ul>
+<p class="rubric">Classes:</p>
+<div class="graphviz"><img src="_images/inheritance-a5344a9cf6a9356a5f4b4b798947d6058e6e6681.png" alt="Inheritance diagram of lambeq.text2diagram.BobcatParser, lambeq.text2diagram.CCGType, lambeq.text2diagram.CCGBankParser, lambeq.text2diagram.CCGRule, lambeq.text2diagram.CCGTree, lambeq.text2diagram.DepCCGParser, lambeq.text2diagram.LinearReader, lambeq.text2diagram.Reader, lambeq.text2diagram.TreeReader, lambeq.text2diagram.TreeReaderMode, lambeq.text2diagram.WebParser" usemap="#inheritance4f700b4036" class="inheritance graphviz" /></div>
+<map id="inheritance4f700b4036" name="inheritance4f700b4036">
+<area shape="rect" id="node5" href="root-api.html#lambeq.Reader" target="_top" title="Base class for readers and parsers." alt="" coords="163,177,235,203"/>
+<area shape="rect" id="node2" href="root-api.html#lambeq.BobcatParser" target="_top" title="CCG parser using Bobcat as the backend." alt="" coords="476,55,583,80"/>
+<area shape="rect" id="node3" href="root-api.html#lambeq.CCGParser" target="_top" title="Base class for CCG parsers." alt="" coords="321,128,411,153"/>
+<area shape="rect" id="node4" href="root-api.html#lambeq.CCGBankParser" target="_top" title="A parser for CCGBank trees." alt="" coords="468,104,591,129"/>
+<area shape="rect" id="node10" href="root-api.html#lambeq.DepCCGParser" target="_top" title="CCG parser using depccg as the backend." alt="" coords="471,153,587,179"/>
+<area shape="rect" id="node14" href="root-api.html#lambeq.WebParser" target="_top" title="Wrapper that allows passing parser queries to an online service." alt="" coords="484,203,575,228"/>
+<area shape="rect" id="node11" href="root-api.html#lambeq.LinearReader" target="_top" title="A reader that combines words linearly using a stair diagram." alt="" coords="312,177,420,203"/>
+<area shape="rect" id="node12" href="root-api.html#lambeq.TreeReader" target="_top" title="A reader that combines words according to a parse tree." alt="" coords="319,227,413,252"/>
+<area shape="rect" id="node6" href="root-api.html#lambeq.CCGRule" target="_top" title="An enumeration of the available CCG rules." alt="" coords="159,79,238,104"/>
+<area shape="rect" id="node13" href="root-api.html#lambeq.TreeReaderMode" target="_top" title="An enumeration for :py:class:`TreeReader`." alt="" coords="133,128,264,153"/>
+<area shape="rect" id="node8" href="root-api.html#lambeq.CCGTree" target="_top" title="Derivation tree for a CCG." alt="" coords="7,55,84,80"/>
+<area shape="rect" id="node9" href="root-api.html#lambeq.CCGType" target="_top" title="A type in the Combinatory Categorical Grammar (CCG)." alt="" coords="5,5,85,31"/>
+</map><div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="lambeq-tokeniser">
+<span id="api-tokeniser"></span><h2>lambeq.tokeniser<a class="headerlink" href="#lambeq-tokeniser" title="Permalink to this heading"></a></h2>
+<p>Tokenisation classes and features for all <a class="reference internal" href="glossary.html#term-parser"><span class="xref std std-term">parsers</span></a> and <a class="reference internal" href="glossary.html#term-reader"><span class="xref std std-term">readers</span></a>.</p>
+<p class="rubric">API: <a class="reference internal" href="lambeq.tokeniser.html"><span class="doc">lambeq.tokeniser</span></a></p>
+<p class="rubric">UML diagrams: <a class="reference internal" href="uml-diagrams.html#uml-tokeniser"><span class="std std-ref">lambeq.tokeniser</span></a></p>
+<p class="rubric">Classes</p>
+<div class="graphviz"><img src="_images/inheritance-c0db3320bd7606c4ff85484132ac02f7eb5a01ea.png" alt="Inheritance diagram of lambeq.tokeniser.SpacyTokeniser" usemap="#inheritance3bda265218" class="inheritance graphviz" /></div>
+<map id="inheritance3bda265218" name="inheritance3bda265218">
+<area shape="rect" id="node3" href="root-api.html#lambeq.Tokeniser" target="_top" title="Base Class for all tokenisers" alt="" coords="125,5,208,31"/>
+<area shape="rect" id="node2" href="root-api.html#lambeq.SpacyTokeniser" target="_top" title="Tokeniser class based on SpaCy." alt="" coords="256,5,379,31"/>
+</map><div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="lambeq-training">
+<span id="api-training"></span><h2>lambeq.training<a class="headerlink" href="#lambeq-training" title="Permalink to this heading"></a></h2>
+<p>Provides a selection of <a class="reference internal" href="glossary.html#term-trainer"><span class="xref std std-term">trainers</span></a>, <a class="reference internal" href="glossary.html#term-model"><span class="xref std std-term">models</span></a>, and optimizers that greatly simplify supervised training for most of <code class="docutils literal notranslate"><span class="pre">lambeq</span></code>’s use cases, classical and quantum.</p>
+<p class="rubric">API: <a class="reference internal" href="lambeq.training.html"><span class="doc">lambeq.training</span></a></p>
+<p class="rubric">UML diagrams: <a class="reference internal" href="uml-diagrams.html#uml-training"><span class="std std-ref">lambeq.training</span></a></p>
+<p class="rubric">Classes</p>
+<div class="graphviz"><img src="_images/inheritance-3b0d9a8578a5a23d5fbefce4626401411957cf4a.png" alt="Inheritance diagram of lambeq.training.BinaryCrossEntropyLoss, lambeq.training.Checkpoint, lambeq.training.CrossEntropyLoss, lambeq.training.Dataset, lambeq.training.MSELoss, lambeq.training.LossFunction, lambeq.training.NelderMeadOptimizer, lambeq.training.NumpyModel, lambeq.training.PytorchModel, lambeq.training.PytorchTrainer, lambeq.training.RotosolveOptimizer, lambeq.training.SPSAOptimizer, lambeq.training.TketModel, lambeq.training.PennyLaneModel, lambeq.training.QuantumModel, lambeq.training.QuantumTrainer" usemap="#inheritance814229a352" class="inheritance graphviz" /></div>
+<map id="inheritance814229a352" name="inheritance814229a352">
+<area shape="rect" id="node10" href="root-api.html#lambeq.LossFunction" target="_top" title="Loss function base class." alt="" coords="139,548,245,573"/>
+<area shape="rect" id="node13" href="root-api.html#lambeq.Model" target="_top" title="Model base class." alt="" coords="156,351,228,376"/>
+<area shape="rect" id="node16" href="root-api.html#lambeq.Optimizer" target="_top" title="Optimizer base class." alt="" coords="149,227,235,252"/>
+<area shape="rect" id="node22" href="root-api.html#lambeq.Trainer" target="_top" title="Base class for a lambeq trainer." alt="" coords="156,449,228,475"/>
+<area shape="rect" id="node2" href="root-api.html#lambeq.BinaryCrossEntropyLoss" target="_top" title="Binary cross&#45;entropy loss function." alt="" coords="507,548,685,573"/>
+<area shape="rect" id="node3" href="root-api.html#lambeq.CrossEntropyLoss" target="_top" title="Multiclass cross&#45;entropy loss function." alt="" coords="307,548,445,573"/>
+<area shape="rect" id="node4" href="root-api.html#lambeq.Checkpoint" target="_top" title="Checkpoint class." alt="" coords="549,104,643,129"/>
+<area shape="rect" id="node12" href="root-api.html#lambeq.MSELoss" target="_top" title="Mean squared error loss function." alt="" coords="337,597,415,623"/>
+<area shape="rect" id="node11" href="root-api.html#lambeq.Dataset" target="_top" title="Dataset class for the training of a lambeq model." alt="" coords="11,5,85,31"/>
+<area shape="rect" id="node18" href="root-api.html#lambeq.QuantumModel" target="_top" title="Quantum Model base class." alt="" coords="315,301,437,327"/>
+<area shape="rect" id="node19" href="root-api.html#lambeq.PennyLaneModel" target="_top" title="A lambeq model for the quantum and hybrid quantum/classical" alt="" coords="309,400,443,425"/>
+<area shape="rect" id="node20" href="root-api.html#lambeq.PytorchModel" target="_top" title="A lambeq model for the classical pipeline using PyTorch." alt="" coords="321,351,431,376"/>
+<area shape="rect" id="node15" href="root-api.html#lambeq.NelderMeadOptimizer" target="_top" title="An optimizer based on the Nelder&#45;Mead algorithm." alt="" coords="293,153,459,179"/>
+<area shape="rect" id="node24" href="root-api.html#lambeq.RotosolveOptimizer" target="_top" title="An optimizer using the Rotosolve algorithm." alt="" coords="301,203,451,228"/>
+<area shape="rect" id="node25" href="root-api.html#lambeq.SPSAOptimizer" target="_top" title="An Optimizer using SPSA." alt="" coords="316,252,436,277"/>
+<area shape="rect" id="node17" href="root-api.html#lambeq.NumpyModel" target="_top" title="A lambeq model for an exact classical simulation of a" alt="" coords="541,327,651,352"/>
+<area shape="rect" id="node26" href="root-api.html#lambeq.TketModel" target="_top" title="Model based on `tket`." alt="" coords="551,277,641,303"/>
+<area shape="rect" id="node21" href="root-api.html#lambeq.PytorchTrainer" target="_top" title="A PyTorch trainer for the classical pipeline." alt="" coords="319,449,433,475"/>
+<area shape="rect" id="node23" href="root-api.html#lambeq.QuantumTrainer" target="_top" title="A Trainer for the quantum pipeline." alt="" coords="313,499,439,524"/>
+</map></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="root-api.html" class="btn btn-neutral float-left" title="lambeq package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="uml-diagrams.html" class="btn btn-neutral float-right" title="Class diagrams" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021-2023 Cambridge Quantum Computing Ltd..</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
