@@ -308,7 +308,7 @@ class Diagram(tensor.Diagram):
 
         for i, circuit in enumerate(circuits):
             n_bits = len(circuit.post_processing.dom)
-            result = np.zeros(*(n_bits * (2, )))
+            result = np.zeros((n_bits * (2, )))
             for bitstring, count in counts[i].items():
                 result[bitstring] = count
             if circuit.post_processing:
