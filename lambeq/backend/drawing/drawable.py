@@ -891,9 +891,12 @@ class DrawableDiagramWithFrames(DrawableDiagram):
 
             left_frame_end = outer_box.x - (outer_box.w / 2)
             pad = rightmost_edge + BOX_SPACING - left_frame_end
-            for node in self.boxes + self.wire_endpoints:
-                if node.parent is None and node not in components_to_left:
-                    node._apply_drawing_offset((pad, 0))
+            # always shift components to right as left part is already sorted,
+            # when padding -ve the components will be moved to left, which creates overlap
+            if pad > 0:
+                for node in self.boxes + self.wire_endpoints:
+                    if node.parent is None and node not in components_to_left:
+                        node._apply_drawing_offset((pad, 0))
 
         # if off and (self.wire_endpoints[scan[off - 1]].x
         #             > left_frame_end - X_SPACING):
